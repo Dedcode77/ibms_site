@@ -1,11 +1,28 @@
 import React from "react";
 
-const Container = () => {
+/**
+ * Composant Container
+ * Sert de wrapper pour centrer et limiter la largeur du contenu.
+ * 
+ * Props :
+ * - children : contenu à afficher à l’intérieur
+ * - className : styles supplémentaires
+ * - size : "sm" | "md" | "lg" | "xl" (largeur maximale)
+ */
+const Container = ({ children, className = "", size = "lg" }) => {
+  const sizeClasses = {
+    sm: "max-w-screen-sm",
+    md: "max-w-screen-md",
+    lg: "max-w-screen-lg",
+    xl: "max-w-screen-xl",
+  };
+
   return (
-    <section className="p-8 text-center">
-      <h2 className="text-2xl font-semibold mb-2">Container</h2>
-      <p>Composant Container prêt à personnaliser.</p>
-    </section>
+    <div
+      className={`mx-auto px-4 sm:px-6 lg:px-8 ${sizeClasses[size]} ${className}`}
+    >
+      {children}
+    </div>
   );
 };
 

@@ -177,10 +177,11 @@ const AboutSection = () => {
               {/* Enhanced Floating badge with animation */}
               <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-2xl transform hover:scale-105 transition-all duration-300 border border-primary-100">
                 <div className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent mb-1">
-                  RID
+                  IBMS
                 </div>
                 <div className="text-xs text-gray-700 font-semibold leading-tight">
-                  Recherche, Innovation<br/>& Développement
+                  {/* Recherche, Innovation<br/>& Développement  */}
+                  Informatic Business Management<br/>Skils 
                 </div>
               </div>
 
@@ -213,16 +214,18 @@ const AboutSection = () => {
           <div className="space-y-8">
             {/* Intro text with enhanced styling */}
             <div className="space-y-5">
-              <p className="text-lg text-gray-500 leading-relaxed">
-                Nous accueillons un <span className="font-bold text-primary-600 bg-primary-50 px-2 py-1 rounded">large éventail de participants</span> : 
-                élèves, étudiants, professionnels, particuliers et passionnés, désireux de renforcer leurs compétences 
-                dans les métiers du numérique.
-              </p>
-              <p className="text-lg text-gray-500 leading-relaxed">
-                À travers notre département <span className="font-bold text-cyan-600 bg-secondary-50 px-2 py-1 rounded">Recherche, Innovation et Développement (RID)</span>, 
-                nous développons des programmes éducatifs et technologiques innovants pour accompagner la jeunesse sénégalaise 
-                dans son épanouissement personnel, académique et professionnel.
-              </p>
+             <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+  <span className="font-bold text-blue-600 bg-secondary-50 px-2 py-1 rounded">IBMS</span> 
+  — <span className="italic text-white/90">Institut Business Management Skills</span> — 
+  est une start-up innovante spécialisée dans les technologies de l’information. 
+  Véritable centre d’excellence, elle se consacre à l’apprentissage et à la maîtrise du numérique. 
+  Nous accueillons une diversité de participants — élèves, étudiants, professionnels, particuliers et passionnés — 
+  animés par la volonté de renforcer leurs compétences dans les métiers du digital, désormais indispensables 
+  dans un monde en constante évolution.  
+  Grâce à une approche fondée sur l’innovation, la pratique et un accompagnement personnalisé, 
+  nous formons une nouvelle génération de talents prêts à relever les défis technologiques d’aujourd’hui et de demain.
+</p>
+
             </div>
 
             {/* Enhanced Key Points */}
@@ -251,7 +254,7 @@ const AboutSection = () => {
               <Button 
                 variant="primary" 
                 size="lg" 
-                className="group shadow-xl hover:shadow-2xl"
+                className="group shadow-xl "
               >
                 <span className="flex items-center gap-2">
                   En savoir plus sur IBMS

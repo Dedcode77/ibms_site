@@ -83,11 +83,11 @@ const Footer = () => {
   return (
     <footer className="relative bg-gray-900 text-gray-300">
       {/* Top decoration wave */}
-      <div className="absolute top-0 left-0 right-0 transform -translate-y-full">
+      {/* <div className="absolute top-0 left-0 right-0 transform -translate-y-full">
         <svg className="w-full h-16 fill-current text-gray-900" viewBox="0 0 1440 120" preserveAspectRatio="none">
           <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
         </svg>
-      </div>
+      </div> */}
 
       {/* Main footer content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
@@ -226,8 +226,8 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+221123456789" className="text-sm text-gray-400 hover:text-primary-400 transition-colors">
-                  +221 XX XXX XX XX
+                <a href="tel:+221773962789" className="text-sm text-gray-400 hover:text-primary-400 transition-colors">
+                  +221 77 396 27 89
                 </a>
               </div>
             </div>
@@ -281,7 +281,7 @@ const Footer = () => {
       </div>
 
       {/* Decorative gradient at bottom */}
-      <div className="h-1 bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600"></div>
+      <div className="h-1 bg-gradient-to-r from-blue-400 via-primary-600 to-cyan-300"></div>
     </footer>
   );
 };
