@@ -98,7 +98,7 @@ const Footer = () => {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-            <img src="/ibms_logo.png" alt="IBMS" className="w-15 h-12 rounded"/>  
+            <img src="/src/assets/pp-removebg-preview.png" alt="IBMS" className="w-15 h-12 rounded"/>  
               {/* <div>
                 <h3 className="text-white font-heading font-bold text-xl">IBMS</h3>
                 <p className="text-xs text-gray-400">Formation & Services</p>

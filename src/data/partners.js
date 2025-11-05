@@ -3,7 +3,7 @@ export const partners = [
   {
     id: 1,
     name: "Paradigm Initiative",
-    logo: "/images/partners/paradigm.png",
+    logo: "/images/partners/Paradigm-Initiative.png",
     website: "https://paradigmhq.org",
     category: "ONG"
   },

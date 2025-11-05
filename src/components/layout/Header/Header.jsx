@@ -33,11 +33,11 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { name: "Accueil", path: "/", icon: "🏠" },
-    { name: "Formations", path: "/formations", icon: "📚" },
-    { name: "Services", path: "/services", icon: "💼" },
-    { name: "Équipe", path: "/team", icon: "👥" },
-    { name: "Blog", path: "/blog", icon: "📝" },
+    { name: "Accueil", path: "/" },
+    { name: "Formations", path: "/formations" },
+    { name: "Services", path: "/services" },
+    { name: "Équipe", path: "/team" },
+    { name: "Blog", path: "/blog" },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -60,7 +60,7 @@ export default function Header() {
             >
               <div className="relative">
                 <img
-                  src="/public/ibms_logo.png"
+                  src="/src/assets/pp-removebg-preview.png"
                   alt="IBMS"
                   className={`transition-all duration-300 rounded-lg ${
                     isScrolled ? "w-15 h-10" : "w-16 h-12"
