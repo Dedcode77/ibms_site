@@ -1,11 +1,25 @@
+// src/components/formations/FormationCategories.jsx
 import React from "react";
 
-const FormationCategories = () => {
+const categories = ["Toutes", "Développement", "Marketing", "Design"];
+
+const FormationCategories = ({ activeCategory, setActiveCategory }) => {
   return (
-    <section className="p-8 text-center">
-      <h2 className="text-2xl font-semibold mb-2">FormationCategories</h2>
-      <p>Composant FormationCategories prêt à personnaliser.</p>
-    </section>
+    <div className="flex justify-center gap-4 mb-10 flex-wrap">
+      {categories.map((category) => (
+        <button
+          key={category}
+          onClick={() => setActiveCategory(category)}
+          className={`px-6 py-2 rounded-full font-bold transition-all ${
+            activeCategory === category
+              ? "bg-blue-500 text-white shadow-lg"
+              : "bg-gray-200 text-gray-800 hover:bg-blue-400 hover:text-white"
+          }`}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
   );
 };
 

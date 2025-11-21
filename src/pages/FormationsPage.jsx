@@ -1,13 +1,12 @@
 import React from "react";
-import FormationsList from "../components/formations/FormationsList";
-import FormationCategories from "../components/formations/FormationCategories";
+import FormationsList from "../components/formations/FormationsList/FormationsList";
 
 const FormationsPage = () => {
   return (
-    <main>
-      <FormationCategories />
+    <div>
+      <h1 className="text-3xl font-bold text-center mt-8">Nos Formations</h1>
       <FormationsList />
-    </main>
+    </div>
   );
 };
 

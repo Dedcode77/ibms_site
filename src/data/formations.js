@@ -1,65 +1,64 @@
 // src/data/formations.js
+
 export const formations = [
   {
     id: 1,
-    title: "Bureautique Complète",
-    category: "Bureautique",
-    description: "Maîtrisez Word, Excel, PowerPoint pour être efficace au bureau",
+    title: "Développement Web",
+    subtitle: "De zéro à expert",
+    description: "Apprenez à créer des sites web modernes et réactifs avec HTML, CSS, JavaScript, React et d'autres technologies essentielles. Cette formation inclut la création de projets pratiques et un accompagnement personnalisé.",
     duration: "3 mois",
-    level: "Débutant",
-    price: "75000",
-    image: "/images/formations/bureautique.jpg",
-    program: [
-      "Microsoft Word : Documents professionnels",
-      "Microsoft Excel : Tableaux et formules",
-      "Microsoft PowerPoint : Présentations"
-    ],
-    instructor: "Mohamed NDIAYE",
-    maxStudents: 15
+    level: "Débutant à intermédiaire",
+    image: "/images/formations/dev-web.jpg",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Git"],
   },
   {
     id: 2,
-    title: "Développement Web",
-    category: "Programmation",
-    description: "HTML, CSS, JavaScript et React pour créer des sites modernes",
-    duration: "6 mois",
-    level: "Intermédiaire",
-    price: "150000",
-    image: "/images/formations/web-dev.jpg",
-    program: [
-      "HTML5 et CSS3",
-      "JavaScript ES6+",
-      "React.js",
-      "Projets pratiques"
-    ],
-    instructor: "Salif CISS",
-    maxStudents: 12
+    title: "Data Science",
+    subtitle: "Analyse et visualisation de données",
+    description: "Cette formation vous permet de maîtriser les outils de la data science : Python, Pandas, NumPy, Matplotlib et apprentissage automatique. Créez des projets concrets de traitement et visualisation de données.",
+    duration: "4 mois",
+    level: "Intermédiaire à avancé",
+    image: "/images/formations/data-science.jpg",
+    skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Machine Learning"],
   },
   {
     id: 3,
-    title: "Infographie",
-    category: "Design",
-    description: "Adobe Photoshop et Illustrator pour créer des visuels impactants",
-    duration: "4 mois",
+    title: "Marketing Digital",
+    subtitle: "Stratégie et réseaux sociaux",
+    description: "Apprenez à concevoir des stratégies digitales efficaces, à utiliser les réseaux sociaux, le SEO, Google Ads et créer des campagnes marketing performantes pour augmenter la visibilité de votre marque.",
+    duration: "2 mois",
     level: "Débutant",
-    price: "100000",
-    image: "/images/formations/infographie.jpg",
-    program: [
-      "Adobe Photoshop : Retouche photo",
-      "Adobe Illustrator : Design vectoriel",
-      "Création de logos et affiches"
-    ],
-    instructor: "Ababacar NDIAYE",
-    maxStudents: 10
+    image: "/images/formations/marketing-digital.jpg",
+    skills: ["SEO", "Google Ads", "Facebook Ads", "Marketing de contenu"],
+  },
+  {
+    id: 4,
+    title: "UI/UX Design",
+    subtitle: "Créer des interfaces attrayantes",
+    description: "Maîtrisez les bases du design d'interface utilisateur et expérience utilisateur. Apprenez à créer des maquettes, prototypes interactifs et à utiliser des outils comme Figma ou Adobe XD pour des projets réels.",
+    duration: "2 mois",
+    level: "Débutant à intermédiaire",
+    image: "/images/formations/ui-ux.jpg",
+    skills: ["Figma", "Adobe XD", "Wireframes", "Prototypage"],
+  },
+  {
+    id: 5,
+    title: "Cybersécurité",
+    subtitle: "Protégez les systèmes informatiques",
+    description: "Cette formation couvre les concepts essentiels de la cybersécurité, y compris les tests d'intrusion, la protection des données et la sécurité réseau. Développez des compétences pratiques pour sécuriser les systèmes informatiques.",
+    duration: "3 mois",
+    level: "Intermédiaire",
+    image: "/images/formations/cybersecurite.jpg",
+    skills: ["Sécurité réseau", "Tests d'intrusion", "Cryptographie", "Protection des données"],
+  },
+  {
+    id: 6,
+    title: "Intelligence Artificielle",
+    subtitle: "Apprenez à créer des IA",
+    description: "Découvrez les concepts fondamentaux de l'intelligence artificielle, l'apprentissage supervisé et non supervisé, et mettez en pratique vos compétences avec Python et des bibliothèques comme TensorFlow et scikit-learn.",
+    duration: "4 mois",
+    level: "Avancé",
+    image: "/images/formations/ia.jpg",
+    skills: ["Python", "Machine Learning", "TensorFlow", "scikit-learn"],
   }
 ];
-
-// Fonction pour récupérer une formation par ID
-export const getFormationById = (id) => {
-  return formations.find(formation => formation.id === parseInt(id));
-};
-
-// Fonction pour filtrer par catégorie
-export const getFormationsByCategory = (category) => {
-  return formations.filter(formation => formation.category === category);
-};
